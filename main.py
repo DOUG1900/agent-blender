@@ -96,7 +96,7 @@ async def main(prompt: str):
 
 if __name__ == "__main__":
     prompts = [
-        "Create a house with a door and some windows. The roof is red and the walls are white.",
+        "A house with a door and some windows. The roof is red and the walls are white.",
         "A vibrant autumn forest, with trees ablaze in shades of red, orange, and gold, as a gentle breeze rustles the fallen leaves",
         "A misty spring morning, where dewkissed flowers dot a lush meadow, surrounded by budding trees",
         "A serene winter landscape, with snowcovered evergreen trees and a frozen lake reflecting the pale sunlight",
@@ -104,4 +104,4 @@ if __name__ == "__main__":
         "The desert, an endless sea of shifting sands, stretched to the horizon, its rippling dunes catching the golden rays of the setting sun, creating an ever-changing landscape of shadows and light",
         "The lake, serene and glassy, mirrored the cloudless sky above, reflecting the surrounding mountains and the graceful flight of a heron, as lily pads floated like emerald jewels upon its tranquil surface",
     ]
-    asyncio.run(main(prompt=prompts[0]))
+    asyncio.run(main(prompt=f"Use Blender to create a scene: {prompts[0]}"))
